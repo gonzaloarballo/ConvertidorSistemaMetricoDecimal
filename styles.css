@@ -1,0 +1,121 @@
+:root{
+    --from-color: #FF0F7B;
+    --to-color: #F89B29;
+    --hover-color: #640D14;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+}
+
+h1{
+    all: unset;
+}
+
+header{
+    font-family: "Cal Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: xxx-large;
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 20px 0;
+    border-radius: 0 0 50px 50px;
+    background: linear-gradient(to right, var(--from-color), var(--to-color));
+    color: white;
+}
+
+.general-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.from-container,
+.to-container{
+    display: flex;
+    align-items: center;
+}
+
+.from-input,
+.to-visor{
+    width: 300px;
+    height: 50px;
+    text-align: end;
+    font-family: "Cal Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: x-large;
+    border-radius: 0 0 0 20px;
+}
+
+.from-input{
+    border: 10px solid var(--from-color);
+    padding: 0;
+}
+
+.to-visor{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 10px solid var(--to-color);
+}
+
+.from-unit,
+.to-unit{
+    height: 70px;
+    font-family: "Cal Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: large;
+    border-radius: 0 20px 0 0;
+    color: white;
+    border: none;
+}
+
+.from-unit{
+    background-color: var(--from-color);
+    text-align: center;
+}
+
+.to-unit{
+    background-color: var(--to-color);
+}
+
+.arrow-container{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+}
+
+.button-go-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-go{
+    height: 100px;
+    width: 125px;
+    font-family: "Cal Sans", sans-serif;
+    font-style: normal;
+    font-size: xxx-large;
+    border-radius: 0 20px 0 20px;
+    border: 0;
+    background: linear-gradient(to bottom, var(--to-color), var(--from-color));
+    color: white;
+}
+
+.button-go:hover{
+    background: linear-gradient(to bottom, #865417, #771340);
+    cursor: pointer;
+    box-shadow: 10px 10px 20px grey;
+}
+
+.button-go:active{
+    background: linear-gradient(to bottom, var(--to-color), var(--from-color));
+}

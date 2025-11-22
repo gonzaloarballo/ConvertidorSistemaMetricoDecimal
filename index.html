@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tp-4</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>convertir unidades</header>
+
+    <div class="general-container">
+
+        <div class="from-container">
+            <input type="number" id="fromInput" class="from-input" placeholder=". . ."></input>
+            <select id="fromUnit" class="from-unit">
+                <option value="mm">mm</option>
+                <option value="cm">cm</option>
+                <option value="dm">dm</option>
+                <option value="m">m</option>
+                <option value="dam">dam</option>
+                <option value="hm">hm</option>
+                <option value="km">km</option>
+            </select>
+        </div>
+
+        <div class="arrow-down-container">
+            <img src="resources/arrow-down.png" alt="arrow-down" width="150px" height="150px">
+        </div>
+
+        <div class="to-container">
+            <h1 id="toVisor" class="to-visor"></h1>
+            <select id="toUnit" class="to-unit">
+                <option value="mm">mm</option>
+                <option value="cm">cm</option>
+                <option value="dm">dm</option>
+                <option value="m">m</option>
+                <option value="dam">dam</option>
+                <option value="hm">hm</option>
+                <option value="km">km</option>
+            </select>
+        </div>
+
+        <div class="button-go-container">
+        <button id="buttonGo" class="button-go">Go!</button>
+        </div>
+    </div>
+    </body>
+</html>
